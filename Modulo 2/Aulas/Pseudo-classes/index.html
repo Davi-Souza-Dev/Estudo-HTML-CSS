@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div{
+            background-color: gray;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border: 1px solid blueviolet;
+            text-align: center;
+        }
+        /*PSEUDO-CLASSES*/
+        div:hover{
+            background-color: rgb(255, 238, 0);  
+        }
+        div::after{
+            content:"  Elemento de teste";
+        }
+    </style>
+</head>
+<body>
+    <!--Os pseudos-Elementos dizem respeito ao conteudo (usar ::) -->
+    <!--As pseudo-classes dizem respeito ao estado do elemento (usar :)-->
+    <div class="div1">Pseudo-Classes01<br/></div>
+    <div class="div2">Pseudo-Classes02<br/></div>
+    <div class="div3">Pseudo-Classes03<br/></div>
+</body>
+</html>
