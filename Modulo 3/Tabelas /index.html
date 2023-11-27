@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        table td{
+            width: 150px;
+            text-align: center;
+            border-radius: 5px;
+            border-style: solid;
+
+        }
+        td:hover{
+            background-color: black;
+            color: white;
+            border-color: white;
+
+        }
+        #teclado{
+            border-color: black;
+            border-style: solid;
+            background-image: linear-gradient(to right,red,rgb(170, 43, 43),rgb(255, 115, 0),rgb(251, 255, 0),rgb(123, 255, 0));
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela 1</h1>
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <h1>Tabela 2</h1>
+    <table border="1">
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">M</td>
+        </tr>
+    </table>
+    <caption>
+        <h1>Tabela 3</h1>
+    </caption>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Mulheres</td>
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batmam</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Big Hero</td>
+                <td>Matrix</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Homems</td>
+                <td>Bruno Mendonsa</td>
+                <td>Amnesia</td>
+                <td>Intocaveis</td>
+                <td>Invenciveis</td>
+            </tr>
+            <tr>
+                <td>Daniel Lorenzo</td>
+                <td>Wall-E</td>
+                <td>OldBoy</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Tabela 4</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="3" style="background-color: rgb(58, 58, 58); color: white;">ÁREA</th>
+                <th rowspan="3" style="background-color: rgb(58, 58, 58); color: white;">DISCIPLINA</th>
+            </tr>
+            <tr>
+                <th colspan="2" style="background-color: rgb(58, 58, 58); color: white;">NOTAS</th>
+                <th rowspan="3" style="background-color: rgb(58, 58, 58); color: white;">Média</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(58, 58, 58); color: white;">Nota 1</th>
+                <th style="background-color: rgb(58, 58, 58); color: white;">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: rgb(58, 58, 58); color: white;" rowspan="4">Exatas</td>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td  style="background-color: rgb(58, 58, 58); color: white;" colspan="4">Média de Humanas</td>
+                <td style="background-color: rgb(58, 58, 58); color: white;"> 0.0</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(58, 58, 58); color: white;" rowspan="2">Exatas</td>
+                <td>Histótia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td  style="background-color: rgb(58, 58, 58); color: white;" colspan="4">Média de Humanas</td>
+                <td style="background-color: rgb(58, 58, 58); color: white;"> 0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Tabela 5 - Teclado</h1>
+    <table id="teclado">
+        <tr>
+            <td>' "</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>0</td>
+            <td>-</td>
+            <td>+</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>TAB</td>
+            <td>Q</td>
+            <td>W</td>
+            <td>E</td>
+            <td>R</td>
+            <td>T</td>
+            <td>Y</td>
+            <td>U</td>
+            <td>I</td>
+            <td>O</td>
+            <td>P</td>
+            <td>´</td>
+            <td>{</td>
+            <td rowspan="2">Enter</td>
+        <tr>
+            <td>CAPS LOCK</td>
+            <td>A</td>
+            <td>S</td>
+            <td>D</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>J</td>
+            <td>K</td>
+            <td>l</td>
+            <td>Ç</td>
+            <td>^</td>
+            <td>}</td>
+        </tr>
+        <tr>
+            <td>SHIFT</td>
+            <td>|</td>
+            <td>Z</td>
+            <td>X</td>
+            <td>C</td>
+            <td>V</td>
+            <td>B</td>
+            <td>N</td>
+            <td>M</td>
+            <td><</td>
+            <td>></td>
+            <td>:</td>
+            <td>?</td>
+            <td>SHIFT</td>
+        </tr>
+        <tr>
+            <td>CRTL</td>
+            <td>WINDOWS</td>
+            <td>ALT</td>
+            <td colspan="7">SPACE</td>
+            <td>ALT GR</td>
+            <td>FN</td>
+            <td>SEI Lá</td>
+            <td>CRTL</td>
+        </tr>
+    </table>
+</body>
+</html>
