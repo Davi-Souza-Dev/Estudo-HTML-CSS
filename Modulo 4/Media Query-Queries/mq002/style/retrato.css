@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*Configuração retrato*/
+
+h1::after{
+    content: " a tela esta em: Modo RETRATO";
+    color: red;
+}
+
+body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

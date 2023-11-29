@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*Configuração paisagem*/
+
+h1::after{
+    content: " a tela esta em: Modo paisagem";
+    color: yellow;
+    text-align: bottom;
+}
+
+body{
+    background: url(../imagens/cev-landscape.jpg);  
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
